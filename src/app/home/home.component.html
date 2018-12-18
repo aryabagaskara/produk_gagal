@@ -1,0 +1,14 @@
+<div>
+
+  <form [formGroup]="formCari" (ngSubmit)=cari() class="form-inline">
+    <input type="text" formControlName="nama" class="form-control"> &nbsp;
+    <button type="submit" class="btn btn-primary">Search</button>
+  </form>
+
+  <a href='/addkelas' class="btn btn-primary" style="margin: 10px">Add Data</a>
+<table datatable [dtOptions]="dtOptions" class="row-border hover">
+</table>
+
+
+</div>
+<router-outlet></router-outlet>

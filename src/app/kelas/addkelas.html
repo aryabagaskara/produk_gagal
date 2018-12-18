@@ -1,0 +1,11 @@
+<form [formGroup]="tambahKelas"  >
+  <div class="form-group row">
+          <input type="text" formControlName="nama" class="form-control"> &nbsp;
+          <button (click)="ngModal.open('categoryModal')" class='CategoryModal'>Search</button>
+  </div>
+  <div class="form-group row">
+    <input type="file" placeholder="unggah" accept=".png" (change)="selectFile($event)" class="form-control">
+  </div>
+  <button class="btn btn-primary" type="submit">SUBLEM</button></form>
+
+<router-outlet></router-outlet>

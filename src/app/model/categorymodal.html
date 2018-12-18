@@ -1,0 +1,7 @@
+<ngx-smart-modal #categoryModal identifier="categoryModal">
+  <form [formGroup]="formCari" (ngSubmit)=cari() class="form-inline">
+    <input type="text" formControlName="nama" class="form-control"> &nbsp;
+    <button type="submit" class="btn btn-primary" value="data-element-id">Search</button>
+  </form>
+<table datatable [dtOptions]="dtOptions" class="row-border hover">
+</table></ngx-smart-modal>
